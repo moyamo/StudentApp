@@ -15,8 +15,38 @@ public class Teacher {
     private String groupName = "00UA";
     private String phoneNumber = "0000000000";
     
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    
     public Teacher() {
     }
     
+    public Teacher(String name, String groupName, String phoneNumber) {
+        setName(name);
+        setGroupName(groupName);
+        setPhoneNumber(phoneNumber);
+    }
     
 }
